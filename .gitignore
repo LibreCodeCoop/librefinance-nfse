@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2026 LibreCode Coop and contributors
+# SPDX-License-Identifier: AGPL-3.0-or-later
+node_modules/
+*.log
+dist/
+vendor/
+coverage/
+tests/e2e-results-*.json
+test-results/
+playwright-report/
+*.env
+
+.github/workflow-sync-summary.md

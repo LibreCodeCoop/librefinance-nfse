@@ -1,0 +1,17 @@
+{
+  "name": "librecodecoop/librefinance-nfse",
+  "description": "Nextcloud NFS-e draft extension; protocol gateway integration is optional and disabled",
+  "type": "project",
+  "license": "AGPL-3.0-or-later",
+  "require": {
+    "php": "^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "OCA\\LibreFinanceNfse\\": "lib/"
+    }
+  },
+  "scripts": {
+    "lint": "find appinfo lib tests -type f -name '*.php' -print0 | xargs -0 -n 1 php -l"
+  }
+}

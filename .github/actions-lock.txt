@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+# SPDX-License-Identifier: MIT
+
+# workflow-lock-schema: 3
+
+{"workflow":"lint-info-xml.yml","sha256":"3a2ed92f25ae9a233d6d64d44bd122b39dee0f153e7a1a9dc81bfb19adcec09b","catalog_commit":"01ded35f8a5c207868efc5802eeace3e72b54a86"}
+{"workflow":"lint-php.yml","sha256":"83d968027814e65e315744d535022cd81d5c96ed38c449d96d74dda8828f4728","catalog_commit":"01ded35f8a5c207868efc5802eeace3e72b54a86"}
+{"workflow":"npm-build.yml","sha256":"fb2286462952d423b396aae7337537aa1619c7b9fb65585ac453a098e188a542","catalog_commit":"01ded35f8a5c207868efc5802eeace3e72b54a86"}
+{"workflow":"reuse.yml","sha256":"f563735e1a573cca3acb2975321ee760e5d52cb6ca64bfcc11a5da4ae0f9bf73","catalog_commit":"01ded35f8a5c207868efc5802eeace3e72b54a86"}
+{"workflow":"sync-workflow-templates.yml","sha256":"7c846e4ffdbaf5770e1221bf04cf9c6b79b34e9a4a14c74b96ef2cf465c995b2","catalog_commit":"01ded35f8a5c207868efc5802eeace3e72b54a86"}

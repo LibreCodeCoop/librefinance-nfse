@@ -5,7 +5,7 @@ SPDX-License-Identifier: AGPL-3.0-or-later -->
   <id>librefinance_nfse</id><name>LibreFinance NFS-e Nacional</name>
   <summary>Fiscal draft preparation for Brazil's national service invoice standard</summary>
   <description>Native Nextcloud financial extension to stage national NFS-e drafts for future authenticated issuance.</description>
-  <version>0.2.0</version>
+  <version>0.2.1</version>
   <licence>AGPL-3.0-or-later</licence>
   <author>LibreCode Coop</author>
   <namespace>LibreFinanceNfse</namespace>

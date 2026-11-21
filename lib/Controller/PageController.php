@@ -6,6 +6,7 @@
 declare(strict_types=1);
 
 namespace OCA\LibreFinanceNfse\Controller;
+use OCP\AppFramework\Http\Attribute\FrontpageRoute;
 
 use DomainException;
 use OCA\LibreFinance\PublicAPI\FinanceApi;
@@ -34,6 +35,7 @@ final class PageController extends Controller {
 
     #[NoAdminRequired]
     #[NoCSRFRequired]
+    #[FrontpageRoute(verb: 'GET', url: '/spaces/{spaceId}')]
     public function index(int $spaceId, bool $embed = false): Response {
         try {
             $this->finance->requireModule($spaceId, 'librefinance_nfse', 'viewer');

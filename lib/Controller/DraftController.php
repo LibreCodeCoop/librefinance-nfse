@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: AGPL-3.0-or-later */
 declare(strict_types=1);
 namespace OCA\LibreFinanceNfse\Controller;
+use OCP\AppFramework\Http\Attribute\FrontpageRoute;
 use DomainException;
 use OCA\LibreFinanceNfse\Service\DraftService;
 use OCP\AppFramework\Controller;
@@ -14,10 +15,12 @@ final class DraftController extends Controller {
         parent::__construct($appName,$request);
     }
     #[NoAdminRequired]
+    #[FrontpageRoute(verb: 'GET', url: '/api/spaces/{spaceId}/drafts')]
     public function index(int $spaceId,int $afterId=0):JSONResponse {
         return $this->respond(fn()=>$this->drafts->list($spaceId,$afterId));
     }
     #[NoAdminRequired]
+    #[FrontpageRoute(verb: 'POST', url: '/api/spaces/{spaceId}/drafts')]
     public function create(int $spaceId,string $operationKey,string $issuerCnpj,
         string $municipalityCode,string $competence,string $serviceCode,
         string $description,int $amountMinor,?int $companyId=null):JSONResponse {

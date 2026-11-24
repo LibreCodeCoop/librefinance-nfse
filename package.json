@@ -1,7 +1,7 @@
 {
   "name": "librefinance-nfse",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "scripts": {
     "build": "vite build && mkdir -p css && mv js/style.css css/main.css && cp docs/BUNDLE-ATTRIBUTION.txt js/main.js.license"
